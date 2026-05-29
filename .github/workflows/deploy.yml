@@ -41,6 +41,7 @@ jobs:
   deploy-backend:
     name: 🐍 Deploy Backend → Fly.io
     runs-on: ubuntu-latest
+    if: ${{ secrets.FLY_API_TOKEN != '' }}   # Skip if token not configured yet
     steps:
       - uses: actions/checkout@v4
 
