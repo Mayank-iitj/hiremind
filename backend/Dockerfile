@@ -20,4 +20,4 @@ RUN mkdir -p /app/uploads
 EXPOSE 8000
 
 # Production: no --reload, bind to $PORT for Render compatibility
-CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2
+CMD python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2
