@@ -7,10 +7,46 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node
 node_modules
 dist
 dist-ssr
 *.local
+
+# Environment — NEVER commit secrets
+.env
+.env.local
+.env.production
+# Keep example/template
+!.env.example
+!.env.production.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+*.pyc
+
+# Database
+*.db
+*.sqlite
+hiremind.db
+alembic/versions/*.pyc
+
+# Uploads
+uploads/
+
+# Fly.io
+.fly/
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +58,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS
+Thumbs.db
+.DS_Store

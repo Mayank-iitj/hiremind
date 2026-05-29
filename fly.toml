@@ -1,0 +1,63 @@
+# fly.toml — HireMind AI Backend (Fly.io)
+# Deploy with: fly deploy (from project root)
+
+app = "hiremind-ai-backend"
+primary_region = "sin"  # Singapore — closest to India
+
+[build]
+  dockerfile = "backend/Dockerfile"
+  build-target = "production"
+
+[build.args]
+  PYTHON_VERSION = "3.11"
+
+[env]
+  PORT = "8000"
+  DEBUG = "false"
+  AI_PROVIDER = "groq"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = false   # Keep always-on
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 100
+    soft_limit = 80
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8000
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [services.concurrency]
+    hard_limit = 100
+    soft_limit = 80
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+
+  [[services.http_checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+    path = "/health"
+    method = "GET"
+    protocol = "http"
