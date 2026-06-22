@@ -14,6 +14,9 @@ jobs:
     name: Deploy Frontend to Vercel
     runs-on: ubuntu-latest
 
+    env:
+      HAS_VERCEL_SECRETS: ${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -33,6 +36,7 @@ jobs:
           VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}
 
       - name: Deploy to Vercel
+        if: env.HAS_VERCEL_SECRETS == 'true'
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -47,9 +51,12 @@ jobs:
     runs-on: ubuntu-latest
     # Only deploy on push to main (not on PRs)
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    env:
+      HAS_RENDER_SECRETS: ${{ secrets.RENDER_SERVICE_ID != '' && secrets.RENDER_API_KEY != '' }}
 
     steps:
       - name: Trigger Render Deploy
+        if: env.HAS_RENDER_SECRETS == 'true'
         run: |
           curl -s -o /dev/null -w "%{http_code}" \
             --request POST \
