@@ -15,7 +15,20 @@ async def get_rankings(
     custom_behavioral: Optional[float] = None,
     current_user: dict = Depends(get_current_user),
 ):
-    candidates = list(MOCK_CANDIDATES.values())
+    from app.data.mock_jobs import MOCK_JOBS
+    
+    job = MOCK_JOBS.get(job_id) or {
+        "title": "Senior ML Engineer",
+        "skills_required": ["Python", "PyTorch", "RAG"]
+    }
+    
+    # Filter candidates belonging to this specific job
+    candidates = [c for c in MOCK_CANDIDATES.values() if c.get("job_id") == job_id]
+    
+    # Fallback to all candidates if none matched to prevent empty dashboard view
+    if not candidates:
+        candidates = list(MOCK_CANDIDATES.values())
+
     custom_weights = None
     if custom_technical or custom_leadership or custom_behavioral:
         custom_weights = {
@@ -28,7 +41,7 @@ async def get_rankings(
         }
 
     ranked = ranking_engine.rank_candidates(
-        {"title": "Senior ML Engineer", "skills_required": ["Python", "PyTorch", "RAG"]},
+        job,
         candidates,
         custom_weights,
     )
