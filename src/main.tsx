@@ -20,7 +20,7 @@ const CLERK_PUBLISHABLE_KEY =
   import.meta.env.CLERK_PUBLISHABLE_KEY || 
   import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || 
   import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || 
-  'pk_test_aGlyZW1pbmQtYWktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA'
+  'pk_live_Y2xlcmsuaGlyZW1pbmQubWF5YW5raWl0ai5pbiQ'
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
