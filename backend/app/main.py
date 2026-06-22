@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 
 from app.core.config import settings
 from app.routers import auth, jobs, candidates, rankings, upload, copilot, analytics, reports
+from app.db.session import create_tables
 
 
 @asynccontextmanager
@@ -13,9 +14,15 @@ async def lifespan(app: FastAPI):
     print("HireMind AI Backend starting...")
     print(f"   AI Provider: {settings.AI_PROVIDER}")
     print(f"   Database: {settings.DATABASE_URL[:30]}...")
+    try:
+        await create_tables()
+        print("Database tables initialized successfully.")
+    except Exception as e:
+        print(f"Error initializing database tables: {e}")
     yield
     # Shutdown
     print("HireMind AI Backend shutting down...")
+
 
 
 app = FastAPI(

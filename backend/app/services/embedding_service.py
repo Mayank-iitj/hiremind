@@ -26,6 +26,8 @@ class EmbeddingService:
     def _detect_provider(self) -> str:
         if settings.OPENAI_API_KEY and settings.AI_PROVIDER == "openai":
             return "openai"
+        if settings.GROQ_API_KEY and settings.AI_PROVIDER == "groq":
+            return "groq"
         try:
             from sentence_transformers import SentenceTransformer  # noqa
             return "sentence_transformers"
@@ -34,7 +36,7 @@ class EmbeddingService:
 
     def _load_model(self):
         """Lazy-load the embedding model."""
-        if self._model is not None:
+        if self._model is not None or self._openai_client is not None or (hasattr(self, '_groq_client') and self._groq_client is not None):
             return
         if self._provider == "sentence_transformers":
             from sentence_transformers import SentenceTransformer
@@ -44,11 +46,18 @@ class EmbeddingService:
             from openai import OpenAI
             self._openai_client = OpenAI(api_key=settings.OPENAI_API_KEY)
             print("[EmbeddingService] Using OpenAI embeddings")
+        elif self._provider == "groq":
+            from openai import OpenAI
+            self._groq_client = OpenAI(
+                api_key=settings.GROQ_API_KEY,
+                base_url="https://api.groq.com/openai/v1"
+            )
+            print("[EmbeddingService] Using Groq embeddings")
 
     def embed(self, text: str) -> List[float]:
         """Generate a single embedding vector."""
         if not text or not text.strip():
-            return self._zero_vector()
+            return self._zero_vector(self.dimension)
         self._load_model()
 
         if self._provider == "sentence_transformers":
@@ -59,8 +68,14 @@ class EmbeddingService:
                 input=text[:8000],
             )
             return response.data[0].embedding
+        elif self._provider == "groq":
+            response = self._groq_client.embeddings.create(
+                model="nomic-embed-text-v1.5",
+                input=text[:8000],
+            )
+            return response.data[0].embedding
         else:
-            return self._mock_embed(text)
+            return self._mock_embed(text, self.dimension)
 
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
         """Embed multiple texts efficiently."""
@@ -82,8 +97,18 @@ class EmbeddingService:
                 )
                 results.extend([d.embedding for d in response.data])
             return results
+        elif self._provider == "groq":
+            results = []
+            for i in range(0, len(texts), 100):
+                batch = texts[i:i + 100]
+                response = self._groq_client.embeddings.create(
+                    model="nomic-embed-text-v1.5",
+                    input=[t[:8000] for t in batch],
+                )
+                results.extend([d.embedding for d in response.data])
+            return results
         else:
-            return [self._mock_embed(t) for t in texts]
+            return [self._mock_embed(t, self.dimension) for t in texts]
 
     def cosine_similarity(self, vec1: List[float], vec2: List[float]) -> float:
         """Compute cosine similarity between two vectors."""
@@ -119,6 +144,8 @@ class EmbeddingService:
     def dimension(self) -> int:
         if self._provider == "openai":
             return 3072  # text-embedding-3-large
+        elif self._provider == "groq":
+            return 768   # nomic-embed-text-v1.5
         return 384  # all-MiniLM-L6-v2
 
 
