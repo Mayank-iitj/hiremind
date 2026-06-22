@@ -320,13 +320,22 @@ def load_subset_candidates():
         print(f"[mock_candidates] Subset CSV not found at {csv_path}. Using base mock candidates.")
         return
 
-    category_to_job = {
-        "INFORMATION-TECHNOLOGY": "job-it",
-        "ENGINEERING": "job-eng",
-        "FINANCE": "job-fin",
-        "HR": "job-hr",
-        "BUSINESS-DEVELOPMENT": "job-bd"
+    # Dynamically resolve category_to_job mapping from currently loaded MOCK_JOBS
+    category_to_job = {}
+    target_departments = {
+        "INFORMATION-TECHNOLOGY": ["INFORMATION TECHNOLOGY", "IT OPERATIONS", "IT"],
+        "ENGINEERING": ["SOFTWARE ENGINEERING", "ENGINEERING", "WEB DEVELOPMENT"],
+        "FINANCE": ["FINANCE", "CORPORATE FINANCE"],
+        "HR": ["HUMAN RESOURCES", "RECRUITING OPERATIONS", "HR"],
+        "BUSINESS-DEVELOPMENT": ["BUSINESS DEVELOPMENT", "SALES / PARTNER RELATIONS", "SALES"]
     }
+
+    for job_id, job in MOCK_JOBS.items():
+        dept = job.get("department", "").upper()
+        for cat, depts in target_departments.items():
+            if dept in depts or any(d in dept for d in depts):
+                category_to_job[cat] = job_id
+                break
 
     try:
         candidates_by_job = {job_id: [] for job_id in category_to_job.values()}

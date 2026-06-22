@@ -1,0 +1,294 @@
+[
+  {
+    "id": "job-175485704",
+    "title": "Software Engineer",
+    "description": "Job Description:GOYT is seeking a skilled and motivated Remote Software Developer specializing in PHP to join our dynamic team. As a key member of our development team, you will play a crucial role in iterating and enhancing our product to drive the growth of our company.\nThis is an equity-based role. \nResponsibilities:Develop and maintain high-quality PHP code for our web-based application.Collaborate with the development team to design and implement new features and enhancements.Troubleshoot and debug issues to ensure optimal performance and reliability.Contribute to the technical roadmap and decision-making process to support the company's growth objectives.Stay updated on industry trends and best practices to continuously improve our product.\nRequirements:Expertise in PHP development with a strong understanding of object-oriented programming principles.Experience with e-commerce platforms or projects is preferred.Proficiency in front-end technologies such as HTML, CSS, and JavaScript.Familiarity with MySQL or other relational databases.Ability to work independently and as part of a remote team.Excellent communication and collaboration skills.Passion for learning and staying updated on emerging technologies.\nBenefits:Opportunity to join a fast-growing startup and contribute to its success.Equity-based compensation package.Flexible remote work arrangement.Collaborative and supportive work environment.Potential for professional growth and advancement within the company.\nIf you are a talented PHP developer with a passion for innovation and growth, we want to hear from you! Please submit your resume and portfolio showcasing your relevant experience to: business@goyt.com",
+    "department": "Engineering",
+    "location": "Denver, CO",
+    "type": "Part-time",
+    "seniority": "Mid-level",
+    "status": "active",
+    "urgency": "standard",
+    "candidates_count": 15,
+    "ranked_count": 15,
+    "fit_threshold": 0.65,
+    "complexity_score": 0.63,
+    "skills_required": [
+      "JavaScript",
+      "Go",
+      "Java",
+      "MySQL"
+    ],
+    "skills_preferred": [],
+    "ai_analysis": {
+      "title": "Software Engineer",
+      "domain": "DevOps / Platform",
+      "seniority": "Mid-level",
+      "skills_required": [
+        "JavaScript",
+        "Go",
+        "Java",
+        "MySQL"
+      ],
+      "skills_preferred": [],
+      "soft_skills": [
+        "Communication",
+        "Collaboration"
+      ],
+      "leadership_expected": false,
+      "culture": "Growth-stage, balanced autonomy and structure",
+      "urgency_level": "Standard",
+      "role_complexity": 0.63,
+      "inferred_signals": [
+        "Adaptability to ambiguity required",
+        "Ownership mentality expected",
+        "Fast execution over perfection"
+      ],
+      "ideal_profile": "Mid-level DevOps / Platform professional with strong technical foundation, relevant domain expertise, and cultural fit for a growth-stage, balanced autonomy and structure environment. Demonstrated ability to deliver impact and communicate effectively with cross-functional teams.",
+      "skill_ontology": {
+        "core": [
+          "JavaScript",
+          "Go",
+          "Java"
+        ],
+        "adjacent": [
+          "MySQL"
+        ],
+        "transferable": [
+          "Problem decomposition",
+          "System thinking",
+          "Data-driven decision making"
+        ]
+      },
+      "hiring_signals": []
+    }
+  },
+  {
+    "id": "job-2428973832",
+    "title": "Staff Accountant",
+    "description": "The ideal candidate will be responsible for timely and accurate preparation of financial accounting data in a variety of areas. It is essential that this candidate brings analytical and organizational skills in order to best support the accounting team.  Responsibilities\u00b7 Posting of AP and AR invoices, ensuring accuracy of date, amount, and expense type.\u00b7 Review, Approve, and Post Purchase Orders from the Dispensary.\u00b7 Process Vendor Payments via check and ACH.\u00b7 Record Journal Entries to allocate expenses of company credit card purchases.\u00b7 Assist Controller in preparation of documents for month end close.\u00b7 Complete Purchase Orders, Vendor Onboarding Documents, Credit Applications, and other business-related forms.\u00b7 Prepare Bank Reconciliation Reports monthly.\u00b7 Assist Controller and CFO in research and preparation of reports for Yearend Close and Yearly Financial Audits.\u00b7 High level of communication, organizational and analytical skills.\u00b7 Reinforce company policies with staff as needed. Constantly update job knowledge. Function in accordance with established standards, procedures, and applicable laws. Time management skills to meet processing and reporting deadlines.  Provide accounting and clerical assistance to the controller.\u00b7 More Duties and Responsibilities may be added at the discretion of Management.\nQualificationsBachelor's degree or equivalent in Accounting, Economics, or Finance0 - 2 years' experience in accountingProficient in Microsoft Excel",
+    "department": "Finance",
+    "location": "Cumberland, MD",
+    "type": "Full-time",
+    "seniority": "Staff",
+    "status": "active",
+    "urgency": "standard",
+    "candidates_count": 15,
+    "ranked_count": 15,
+    "fit_threshold": 0.65,
+    "complexity_score": 0.5700000000000001,
+    "skills_required": [
+      "AWS"
+    ],
+    "skills_preferred": [],
+    "ai_analysis": {
+      "title": "Staff Accountant",
+      "domain": "Software Engineering",
+      "seniority": "Staff",
+      "skills_required": [
+        "AWS"
+      ],
+      "skills_preferred": [],
+      "soft_skills": [
+        "Communication"
+      ],
+      "leadership_expected": true,
+      "culture": "Growth-stage, balanced autonomy and structure",
+      "urgency_level": "Standard",
+      "role_complexity": 0.5700000000000001,
+      "inferred_signals": [
+        "Cross-functional leadership expected",
+        "Mentorship responsibilities likely",
+        "Research-to-production pipeline experience valued"
+      ],
+      "ideal_profile": "Staff Software Engineering professional with strong technical foundation, relevant domain expertise, and cultural fit for a growth-stage, balanced autonomy and structure environment. Demonstrated ability to deliver impact and communicate effectively with cross-functional teams.",
+      "skill_ontology": {
+        "core": [
+          "AWS"
+        ],
+        "adjacent": [],
+        "transferable": [
+          "Problem decomposition",
+          "System thinking",
+          "Data-driven decision making"
+        ]
+      },
+      "hiring_signals": []
+    }
+  },
+  {
+    "id": "job-3383214611",
+    "title": "Account Executive - Mid-Market",
+    "description": "Here at Crisp, we value the strength in teamwork, and strongly believe that it\u2019s the key to Crisp\u2019s success. By bringing together bright, motivated creators, wherever they live and work, we are leveraging humanity\u2019s diversity of experience and background in order to understand the challenges facing our food supply, and solve them together. Come join us, and help build the type of business you\u2019d like to be a part of.\nWe believe in transparency, diversity, merit and fostering a culture of empowerment, personal impact and career growth. The Mid-Market Account Executive will be a key member of our Sales Team, representing our brand, our mission and our industry leading platform. You are passionate, ambitious and self-motivated. You are eager to contribute to the overall company goals, exceed your quota and foster growth amongst our team and our organization.\nThis is a sales-focused role, reporting directly to the Senior Account Executive with ample opportunity for growth within the team. Whether you are coming from a startup or corporate background, you appreciate how much impact you will have within the organizations. You relish the ability to shape your own role and the future of the company.\nSigns of a great candidate for Crisp:Collaborative. You know that your colleagues\u2019 perspectives will make our customers successful. Similarly, you use your strengths to help us grow together. You propose ways for us to be more engaged and successful with our customers.Customer focused. Our customers are at the forefront of your day. You prioritize our customers\u2019 voice to ensure their needs are met. Ambitious, curious, and resourceful. You are innately curious, and you aren\u2019t afraid to work hard. You are self driven, you take direction well but are able to be creative to find results on your own when asked. You are driven to succeed because your hard work and results make you proud.Disciplined and reliable.  We are a distributed company and you enjoy the benefits of working distributed while consistently delivering what you have committed to. When you hit a snag, you communicate and reset expectations early.Appreciative of honest feedback.  You know that the best way to learn and grow is through constructive feedback delivered kindly. You view feedback given to you as an opportunity to get better and strive to do the same for others.Work smarter and harder. You often identify a problem, create a solution and bring it to a state of completion - with others, or even on your own. You find ways of eliminating or automating stuff that is uninteresting or wasteful.\nSigns of a great candidate for Mid-Market Account Executive:In-depth sales experience at a SaaS company. You have experience prospecting Mid-Market CPG companies and closing high velocity deals with fast deal cycles. You have experience working with SaaS sales tools like Outreach, Salesforce, ZoomInfo and LinkedIn Sales Navigator.Closing Deals. You have experience both prospecting and closing deals. You excel at creating high quality leads and running a successful sales cycle from beginning to end. You make the most of every opportunity that comes your way. Goal driven.  You know how to push through rejection and find success in adversity. You understand consistent success comes from grit and a hard work ethic.Success in a remote work environment. You are self driven, you take direction well but are able to be creative to find new ways to be successful. You derive great personal satisfaction in your work.Communication. You are confident and convincing in your communication and have a strong objection handling skill set.\nLocation (Preferred): Chicago\nWe are building a team of people with a breadth of combined experiences so that we can collaboratively enable our customers to be successful. We\u2019re looking for individuals that are capable, reliable, and hoping to grow along with us. Do you have strengths you can share? If so, we\u2019d love to hear from you!",
+    "department": "Business Development",
+    "location": "Chicago, IL",
+    "type": "Full-time",
+    "seniority": "Mid-Senior level",
+    "status": "active",
+    "urgency": "standard",
+    "candidates_count": 15,
+    "ranked_count": 15,
+    "fit_threshold": 0.65,
+    "complexity_score": 0.6300000000000001,
+    "skills_required": [
+      "Go",
+      "RAG"
+    ],
+    "skills_preferred": [],
+    "ai_analysis": {
+      "title": "Account Executive - Mid-Market",
+      "domain": "DevOps / Platform",
+      "seniority": "Senior",
+      "skills_required": [
+        "Go",
+        "RAG"
+      ],
+      "skills_preferred": [],
+      "soft_skills": [
+        "Communication"
+      ],
+      "leadership_expected": true,
+      "culture": "Enterprise, process-driven, collaborative",
+      "urgency_level": "Standard",
+      "role_complexity": 0.6300000000000001,
+      "inferred_signals": [
+        "Adaptability to ambiguity required",
+        "Ownership mentality expected",
+        "Fast execution over perfection",
+        "Cross-functional leadership expected",
+        "Mentorship responsibilities likely"
+      ],
+      "ideal_profile": "Senior DevOps / Platform professional with strong technical foundation, relevant domain expertise, and cultural fit for a enterprise, process-driven, collaborative environment. Demonstrated ability to deliver impact and communicate effectively with cross-functional teams.",
+      "skill_ontology": {
+        "core": [
+          "Go",
+          "RAG"
+        ],
+        "adjacent": [],
+        "transferable": [
+          "Problem decomposition",
+          "System thinking",
+          "Data-driven decision making"
+        ]
+      },
+      "hiring_signals": []
+    }
+  },
+  {
+    "id": "job-3715891138",
+    "title": "Human Resources Manager",
+    "description": "Human Resources Manager  Position SummaryThe ideal candidate will perform routine tasks required to administer and execute human resources programs including, but not limited to: recruiting, compensation, benefits, and leave; disciplinary matters; disputes and investigations; performance and talent management; productivity, recognition, and morale; occupational health and safety; and training and development.In addition, you will build strong relationships with our company's managers in order to help them with their human resource and recruiting needs;\nHandle employment-related inquiries from applicants, employees, and supervisors, referring complex and/or sensitive matters to the appropriate staff.Maintain compliance with federal, state, and local employment laws and regulations, and recommended best practices; reviews policies and practices as it pertains to company policies and procedures.Create employee engagement programs, getting necessary leadership and budget approval prior to implementation.Maintain physical and digital personnel, medical and restricted files.Maintain knowledge of trends, best practices, regulatory changes, and new technologies in human resources, talent management, and employment law.Assists with payroll and benefits administration.Ensures compliance with company policies, procedures and legal responsibilities.\nEmployment Services\u00b7 Applicant tracking \u00b7 E Verify (Verifying licensure and eligibility for employment (I-9))\u00b7 Distribute human resource materials.\u00b7 Assists in coordination of employee recognition programs.\u00b7 Updates managers regarding new or revised Human Resource policies.\u00b7 Coordinates with managers and supervisors regarding disciplinary actions, and performance evaluation ratings.\n Timekeeping responsibilities will include the following:Assists supervisors with department timekeeping function.Reviews and edits timesheets, time edit forms and schedules for completeness and accuracy.Compiles employees' time from scheduling, Timekeeping and Payroll computer systems.Resolve timekeeping related accrual discrepancies and issues.Maintains files and appropriate records and ensures confidentiality of same.Streamlines work processes and implements changes to effect continual improvement in timekeeping procedures.\nRecruiting ResponsibilitiesDevelop and implement a comprehensive talent acquisition strategy aligned with the company's goals and objectives.Develop recruitment plans to address current and future talent requirements.Oversee full-cycle recruitment processes, including sourcing, screening, interviewing, and offer negotiation, to ensure a seamless candidate experience.Stay informed of industry trends and best practices in talent acquisition and incorporate innovative approaches into recruitment strategies.Collaborate with cross-functional teams to streamline recruitment processes, improve efficiency, and enhance the overall candidate experience.Serve as a subject matter expert on recruitment-related matters and provide guidance and support to internal stakeholders as needed.Stay informed of HR best practices, legal requirements, and industry trends to ensure compliance and effectiveness in HR processes.\nMinimum Education:Bachelor\u2019s degree in Human Resources, Business Administration, or related field required.\nMinimum Experience:At least three years of HR experience preferred.Ability to act with integrity, professionalism, and confidentiality.Excellent verbal and written communication skills.Exceptional interpersonal, negotiation, and conflict resolution skills.Outstanding time management skills with a proven ability to meet deadlines.\nLicensure Requirement:Employee must have a valid Tennessee driver\u2019s license and state mandated minimum insurance coverage.  ",
+    "department": "Hr",
+    "location": "Sevierville, TN",
+    "type": "Full-time",
+    "seniority": "Staff",
+    "status": "active",
+    "urgency": "standard",
+    "candidates_count": 15,
+    "ranked_count": 15,
+    "fit_threshold": 0.65,
+    "complexity_score": 0.6100000000000001,
+    "skills_required": [
+      "Go",
+      "RAG",
+      "AWS"
+    ],
+    "skills_preferred": [],
+    "ai_analysis": {
+      "title": "Human Resources Manager",
+      "domain": "Software Engineering",
+      "seniority": "Staff",
+      "skills_required": [
+        "Go",
+        "RAG",
+        "AWS"
+      ],
+      "skills_preferred": [],
+      "soft_skills": [
+        "Communication",
+        "Leadership"
+      ],
+      "leadership_expected": true,
+      "culture": "Enterprise, process-driven, collaborative",
+      "urgency_level": "Standard",
+      "role_complexity": 0.6100000000000001,
+      "inferred_signals": [
+        "Cross-functional leadership expected",
+        "Mentorship responsibilities likely"
+      ],
+      "ideal_profile": "Staff Software Engineering professional with strong technical foundation, relevant domain expertise, and cultural fit for a enterprise, process-driven, collaborative environment. Demonstrated ability to deliver impact and communicate effectively with cross-functional teams.",
+      "skill_ontology": {
+        "core": [
+          "Go",
+          "RAG",
+          "AWS"
+        ],
+        "adjacent": [],
+        "transferable": [
+          "Problem decomposition",
+          "System thinking",
+          "Data-driven decision making"
+        ]
+      },
+      "hiring_signals": []
+    }
+  },
+  {
+    "id": "job-3884429179",
+    "title": "Information Technology Manager",
+    "description": "The ideal candidate will have 3+ years experience with upgrading or administration of ERP administration as well as help desk needs for a manufacturing or distribution company. Experience with moving on prem servers to MS Azure is required.  ResponsibilitiesManage technologies and provide administrative assistance for various systemsUnderstand various IT troubleshooting and provide technical supportControl and monitor data, network access and backup systemsNegotiate and communicate with third-party software providers for new software's and troubleshooting\nQualificationsBachelor's degree in computer science or relevant field5+ years of experience in related fieldExperience in information technology space and solving various software and hardware problemsStrong technical problem solving and communication skillsAbility to work onsite Mon-Fri from 8am-5pm\n",
+    "department": "Information Technology",
+    "location": "Crystal Lake, IL",
+    "type": "Full-time",
+    "seniority": "Mid-level",
+    "status": "active",
+    "urgency": "standard",
+    "candidates_count": 15,
+    "ranked_count": 15,
+    "fit_threshold": 0.65,
+    "complexity_score": 0.5900000000000001,
+    "skills_required": [
+      "Go",
+      "Azure"
+    ],
+    "skills_preferred": [],
+    "ai_analysis": {
+      "title": "Information Technology Manager",
+      "domain": "Software Engineering",
+      "seniority": "Mid-level",
+      "skills_required": [
+        "Go",
+        "Azure"
+      ],
+      "skills_preferred": [],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "leadership_expected": true,
+      "culture": "Growth-stage, balanced autonomy and structure",
+      "urgency_level": "Standard",
+      "role_complexity": 0.5900000000000001,
+      "inferred_signals": [
+        "Cross-functional leadership expected",
+        "Mentorship responsibilities likely"
+      ],
+      "ideal_profile": "Mid-level Software Engineering professional with strong technical foundation, relevant domain expertise, and cultural fit for a growth-stage, balanced autonomy and structure environment. Demonstrated ability to deliver impact and communicate effectively with cross-functional teams.",
+      "skill_ontology": {
+        "core": [
+          "Go",
+          "Azure"
+        ],
+        "adjacent": [],
+        "transferable": [
+          "Problem decomposition",
+          "System thinking",
+          "Data-driven decision making"
+        ]
+      },
+      "hiring_signals": [
+        "Significant experience requirement"
+      ]
+    }
+  }
+]
